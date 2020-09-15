@@ -1,0 +1,6 @@
+{
+  "url": "https://admin:admin@localhost:5984",
+  "db": "global-logs",
+  "application": "winston-couch",
+  "version": "0.0.0"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "winston-couch",
+  "version": "1.0.0",
+  "description": "CouchDB Transport for Winston Logger. Based on https://github.com/hakanostrom/winston-cloudant",
+  "keywords": [
+    "logging",
+    "tools",
+    "winston",
+    "CouchDB"
+  ],
+  "main": "lib/winston.couch.js",
+  "scripts": {},
+  "author": "Alex Schedler",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kulturpessimist/winston-couch.git"
+  },
+  "dependencies": {
+    "nano": "^8.2.2",
+    "winston-transport": "^4.4.0"
+  },
+  "devDependencies": {
+    "winston": "^3.3.3"
+  }
+}
