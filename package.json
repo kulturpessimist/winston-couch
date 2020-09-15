@@ -8,7 +8,7 @@
     "winston",
     "CouchDB"
   ],
-  "main": "lib/winston.couch.js",
+  "main": "winston.couch.js",
   "scripts": {},
   "author": "Alex Schedler",
   "license": "MIT",

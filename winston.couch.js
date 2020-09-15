@@ -1,6 +1,5 @@
 const Transport = require("winston-transport");
 const nano = require("nano");
-const npm = require(`${__dirname}/package`);
 
 //
 // Inherit from `winston-transport` so you can take advantage
@@ -25,8 +24,8 @@ module.exports = class CouchTransport extends Transport {
     this.db = this.nano.use(opts.db);
     this.uuids = [];
 
-    this.app = opts.app || opts.application || npm.name || "default";
-    this.version = opts.v || opts.version || npm.version || "0.0.0";
+    this.app = opts.app || opts.application || "default";
+    this.version = opts.v || opts.version || "0.0.0";
   }
 
   async log(info, callback) {
