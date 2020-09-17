@@ -49,7 +49,7 @@ module.exports = class CouchTransport extends Transport {
 
     this.db.insert(
       {
-        _id: `${this.app}:${this.uuids.shift()}`,
+        _id: `${this.app}:${info.timestamp.getTime()}-${this.uuids.shift()}`,
         application: this.app,
         version: this.version,
         resource: "log",
@@ -57,7 +57,7 @@ module.exports = class CouchTransport extends Transport {
         params: meta,
       },
       function (err, data) {
-        if (err) console.log("FEL: " + err + "");
+        if (err) console.log(`Error: ${err}`);
         callback();
       }
     );
