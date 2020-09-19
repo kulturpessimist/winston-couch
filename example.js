@@ -1,6 +1,6 @@
 const { createLogger, format, transports } = require("winston");
 const { combine, timestamp, label, json, colorize, simple } = format;
-const cfg = require(".couch.config");
+const cfg = require("./.couch.config");
 const couchTransport = require("./winston.couch");
 
 const logger = createLogger({
